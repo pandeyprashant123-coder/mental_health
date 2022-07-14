@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+:root{
+    --color_dark:#f1e3e3;
+    --color_light:rgba(192,45,80,0.32);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    padding-inline: 1.5rem;
+    padding-top: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    /* height: 100vh; */
+    background-color: rgba(241,227,227,0.4);
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin-right: 120px;
+}
+.login{
+    margin-left: 3.2rem;
+}
+nav ul li{
+    font-weight: 1000;
+    font-size: 1rem;
+}
+nav ul li a{
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.background{
+    border-radius: 50%;
+    bottom: 0;
+    height: 153vh;
+    width: 178vh;
+    position: fixed;
+    background-color: rgba(192, 45, 80, 0.32);
+    transform: translate(-419px,677px);
+    background:radial-gradient(closest-corner at 47% 61%,rgba(192, 45, 80, 3),rgba(90, 84, 205, 0.2));
+}
+
+.report_bar{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+}
+.review img{
+    margin-left: 43px;
+    transform: translateY(45px);
+    width: 50px;
+    cursor: pointer;
+}
+.send{
+    margin-top: 20px;
+    width: 5rem;
+    margin-left: 300px;
+    border: none;
+    background: #4bff4b;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.report_bar textarea{
+    border: none;
+    width: 100%;
+    outline: none;
+}
+@media only screen and (max-width:800px){
+    
+    .send{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width:600px){
+    body{
+        padding-inline: 1.1rem;
+    }
+#menu{
+        height: 100vh;
+    position: fixed;
+    width: 50vw;
+    background: #c19bc0;
+    z-index: 1;
+    transform: translateX(500px);
+    }
+
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        margin-left: auto;
+        z-index: 2;
+      }
+      .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgb(193 148 183);;
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before,
+      .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgb(193 148 183);;
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before {
+        transform: translateY(-16px);
+      }
+      .menu-btn__burger::after {
+        transform: translateY(16px);
+      }
+      /* ANIMATION */
+      .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+      .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+
+    .login{
+        margin-left: 20px;
+    }
+    nav ul{
+        margin-top: 30vh;
+    margin-right: 120px;
+    flex-direction: column;
+    margin-left: 29px;
+    }
+    nav ul li{
+        margin: 20px;
+    }
+
+    .background{
+        height: 111vh;
+    width: 126vh;
+    transform: translate(-430px,397px);
+    }
+
+}
+
+@media only screen and (max-width:400px){
+    .central_bar{
+        width: 85vw;
+    }
+    .review img{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url(reviews.css);
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="" alt="img"></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div id="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-btn" onclick="menutoggle()">
+            <div class="menu-btn__burger"></div>
+          </div>
+    </div>
+    <div class="top_review">
+        <div class="profile">
+                    <img src="profile.svg" alt="">
+                    <h3>Doctors Name</h3>
+                </div>
+                <div class="review_logo">
+                    <a href=""></a><img src="back.svg" alt="">
+                    <h5>Reviews</h5>
+                </div>
+    </div>
+        
+    <div class="blog_panal">
+        <div class="review">
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        <div class="review_items">
+            <img src="medical-5459631.svg" alt="">
+            <h6>Patients Username</h6>
+            <span>3 days ago</span>
+            <p>It was an awesome experience</p>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="background"></div>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+//toggle
+        var menu =document.getElementsById("menu");
+        menu.style.transform="translateX(500px)";
+        // function menutoggle(){
+        //     if (menu.style.height=="0"){
+        //         menu.style.height="100vh";
+        //     }
+        //     else{
+        //         menu.style.height="0";
+        //     }
+        // }
+    </script>
+</body>
+</html>

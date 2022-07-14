@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url(psychatrists.css);
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="" alt="img"></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div id="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html" class="login">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-btn" onclick="menutoggle()">
+            <div class="menu-btn__burger"></div>
+          </div>
+    </div>
+   
+    <div class="doctor_panal">
+        <h2>Choose our best psychatrists</h2>
+        <a href="doctorprofile.html">
+            
+            <div class="doctors">
+                <div class="doctor1">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p> 
+                </div>
+        </a>
+           
+            <a href="doctorprofile.html">
+                
+                <div class="doctor2">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                
+                <div class="doctor3">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                
+                <div class="doctor4">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                
+                <div class="doctor5">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                
+                <div class="doctor6">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                
+                <div class="doctor7">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                
+                <div class="doctor8">
+                    <img src="medical-5459631.svg" alt="">
+                    <p>Doctors Name</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="background"></div>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+//toggle
+        var menu =document.getElementsById("menu");
+        menu.style.transform="translateX(500px)";
+        // function menutoggle(){
+        //     if (menu.style.height=="0"){
+        //         menu.style.height="100vh";
+        //     }
+        //     else{
+        //         menu.style.height="0";
+        //     }
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url(appointment.css);
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="" alt="img"></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div id="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-btn" onclick="menutoggle()">
+            <div class="menu-btn__burger"></div>
+          </div>
+    </div>
+   
+    <div class="panal">
+        <div class="appointment">
+            <img src="back.svg" alt=""/>
+            <h1>Take Your appointment</h1>
+        </div>
+        <div class="cards">
+            <div class="pre">
+                <h4>Pre-appointment</h4>
+                <img src="Message_appointment.svg" alt="">
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus veritatis in repellat impedit repudiandae minima!</span>
+            </div>
+            <div class="pre">
+                <h4>Appointment</h4>
+                <img src="appointment main.svg" alt="">
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus veritatis in repellat impedit repudiandae minima!</span>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            <div class="pre">
+                <h4>Post-appointment</h4>
+                <img src="post-appointment.svg" alt="">
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus veritatis in repellat impedit repudiandae minima!</span>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="background"></div>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+//toggle
+        var menu =document.getElementsById("menu");
+        menu.style.transform="translateX(500px)";
+        // function menutoggle(){
+        //     if (menu.style.height=="0"){
+        //         menu.style.height="100vh";
+        //     }
+        //     else{
+        //         menu.style.height="0";
+        //     }
+        // }
+    </script>
+</body>
+</html>

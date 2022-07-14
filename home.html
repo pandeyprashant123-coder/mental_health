@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url(home.css);
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+</head>
+<body>
+    <div class="mainhead">
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="logo.jfif" alt="img"></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div id="menu">
+                <ul class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="burger">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+        </div>
+    </div>
+
+    </div>
+    <section class="home">
+        <div class="home_content">
+            <h1>
+                <strong>Mental illness is not a personal failure</strong>
+            </h1>
+        </div>
+        <div class="home_image">
+            <img src="medical-5459631.svg" alt="" width="100%" height="100%">
+        </div>
+    </section>
+    <section class="buttons">
+        <a href="psychatrists.html" class="container1">
+            <div class="container">
+                <div class="content_top"><h4>Take Appointment</h4></div>
+                <div class="content_head"><img src="Appointment.svg" alt=""></div>
+                <div class="content_about"><span>Fix your appointment now</span> </div>
+            </div>
+        </a>
+        <a href="blog.html" class="container2">
+            <div class="container">
+                <div class="content_top"><h4>Blog</h4></div>
+                <div class="content_head"><img src="blog.svg" alt=""></div>
+                <div class="content_about"><span>Read our blog</span> </div>
+            </div>
+        </a>
+        <a href="video.html" class="container3">
+            <div class="container">
+                <div class="content_top"><h4>Emergency</h4></div>
+                <div class="content_head"><img src="emergency.svg" alt=""></div>
+                <div class="content_about"><span>Emergency Action</span> </div>
+            </div>
+        </a>
+    </section>
+    <div class="background"></div>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+
+let menu = document.querySelector('#menu');
+const burger = document.querySelector('.burger');
+menu.style.transform="translateX(500px)";
+burger.addEventListener('click',()=>{
+            if (menu.style.transform=="translateX(500px)"){
+                menu.style.transform = "translateX(100px)";
+            }
+            else if(menu.style.transform = "translateX(100px)"){
+                menu.style.transform="translateX(500px)";
+            }
+        });
+    </script>
+</body>
+</html>

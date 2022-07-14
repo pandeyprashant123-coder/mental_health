@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url(doctorprofile.css);
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctor profile</title>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="" alt="img"></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div id="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-btn" onclick="menutoggle()">
+            <div class="menu-btn__burger"></div>
+          </div>
+    </div>
+   
+    <section>
+        <div class="profile_panel">
+            <div class="my_profile">
+                <span><img src="profile.svg" alt=""><h2>Doctors Name</h2></span>
+                <div class="photo"><img src="medical-5459631.svg" alt=""/></div>
+                <p>Doctors Name</p>
+            </div>
+            <div class="profile_content">
+                <div class="profile_col">
+                    <div class="firstname"> <p>firstname</p><h6>firstname</h6></div>
+                    <div class="lastname"> <p>lastname</p><h6>lastname</h6></div>
+                </div>
+                <div class="profile_col">
+                    <div class="contact"> <p>contact</p><h6>contact</h6></div>
+                    <div class="email"> <p>email</p><h6>email@gmail.com</h6></div>
+                    <div class="Qualification"> <p>Qualification</p><h6>Qualification</h6></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="buttons">
+                <a href="reviews.html">
+
+                    <button>Read Review</button>
+                </a>
+                <a href="availabledoctor.html">
+
+                    <button>Book an appointment</button>
+                </a>
+            </div>
+    </section>
+
+    <div class="background"></div>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+//toggle
+        var menu =document.getElementsById("menu");
+        menu.style.transform="translateX(500px)";
+        // function menutoggle(){
+        //     if (menu.style.height=="0"){
+        //         menu.style.height="100vh";
+        //     }
+        //     else{
+        //         menu.style.height="0";
+        //     }
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+        body{margin: 0;padding: 0;
+            font-family: 'Montserrat', sans-serif;
+    background-color: rgba(241,227,227,0.4);
+    padding-inline: 1.5rem;
+        }
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+        
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin-right: 120px;
+}
+.login{
+    margin-left: 3.2rem;
+}
+nav ul li{
+    font-weight: 1000;
+    font-size: 1rem;
+}
+nav ul li a{
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+        h1{
+            font-size: 30px;
+        }
+        .signuppage{
+            display:flex;
+            flex-direction: column;
+            margin: auto;
+            background: white;
+            justify-content: space-around;
+            align-items: center;
+            height: 77vh;
+            margin-top:15vh;
+            width: 20vw;
+            border-radius: 5px;
+
+            position: relative;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+        }
+        .signup_form{
+            margin-top: 60px;
+        }
+        .signup{
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+            align-items: center;
+            font-weight: bold;
+        }
+        .signup>*{
+            margin-bottom: 10px;
+        }
+        .place1,.place2,.place3,.place4,.place5,.place6{
+            display: flex;
+    margin: 10px;
+    background: #f3dbdb;
+    border-radius: 5px;
+        }
+        img{
+            width: 35px;
+        }
+        h1{
+            position: absolute;
+            top: 12px;
+        }
+        .signup input{
+            border:none;
+            background-color: #F3DBDB;
+            padding: 10px;
+            
+    border-radius: 5px;
+        }
+        .signup input::placeholder{color:#BD8080}
+        .signup input:focus{
+            outline: none;
+        }
+        .signup input:focus{
+            outline: none;
+        }
+        .btn{
+            color: white;
+    width: 71%;
+    background: #93B338;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+        .signup_btn{
+            font-size: 12px;
+            color:#BD8080;
+            margin-block: 5px;
+            
+            font-weight: lighter;
+        }
+        .signup_btn a{
+            color:#BD8080;
+        }
+        .background{
+    border-radius: 50%;
+    bottom: 0;
+    height: 153vh;
+    width: 178vh;
+    position: fixed;
+    background-color: rgba(192, 45, 80, 0.32);
+    transform: translate(-419px,677px);
+    background:radial-gradient(closest-corner at 47% 61%,rgba(192, 45, 80, 3),rgba(90, 84, 205, 0.2));
+}
+
+@media only screen and (max-width:900px){
+    .signuppage{
+        width: 40vw;
+    }
+}
+@media only screen and (max-width:700px){
+    .signuppage{
+        width: 50vw;
+    }
+}
+@media only screen and (max-width:600px){
+    .signuppage{
+        width: 70vw;
+    }
+    .signup input{
+        padding: 8px;
+    }
+    img{
+        width: 30px;
+    }
+    .btn{width: 200%;}
+
+#menu{
+        height: 100vh;
+    position: fixed;
+    width: 50vw;
+    background: #c19bc0;
+    z-index: 1;
+    transform: translateX(500px);
+    }
+    
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 0px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        margin-left: auto;
+        z-index: 2;
+      }
+      .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgb(193 148 183);;
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before,
+      .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgb(193 148 183);;
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before {
+        transform: translateY(-16px);
+      }
+      .menu-btn__burger::after {
+        transform: translateY(16px);
+      }
+      /* ANIMATION */
+      .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+      .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    
+    .login{
+        margin-left: 20px;
+    }
+    nav ul{
+        margin-top: 30vh;
+    margin-right: 120px;
+    flex-direction: column;
+    margin-left: 29px;
+    }
+    nav ul li{
+        margin: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="signuppage"> 
+        <h1>SIGN UP</h1>
+        <div class="signup_form">
+            <form action="" class="signup">
+                <div class="place1">
+
+                </div>
+                <div class="place2">
+                    <img src="User_cicrle.svg" alt="">
+                    <input type="text" name="first_name" placeholder="First Name">
+
+                </div>
+                <div class="place3">
+                    <img src="User_cicrle.svg" alt="">
+                    <input type="text" name="last_name" placeholder="Lastname">
+
+                </div>
+                <div class="place4">
+                    <img src="User_add.svg" alt="">
+                    <input type="text" name="user_name" placeholder="Username">
+
+                </div>
+                <div class="place5">
+                    <img src="Message.svg" alt="">
+                    <input type="email" name="email" placeholder="Email">
+
+                </div>
+                <div class="place5">
+                    <img src="Lock.svg" alt="">
+                    <input type="password" name="password" placeholder="password">
+
+                </div>
+                <div class="place6">
+                    <img src="Lock.svg" alt="">
+
+                    <input type="password" name="confirm_password" placeholder="Confirm Password">
+                </div>
+            
+            <span class="signup_btn"><input type="checkbox" name="password" placeholder="password">I agree <a href="#">(Terms and Codition)</a></span>
+            <button class="btn">SIGN UP</button>
+            
+        </form>
+        </div>
+        
+    </div>
+    <div class="background"></div>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+    </script>
+</body>
+</html>

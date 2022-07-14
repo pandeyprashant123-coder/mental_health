@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url(blog.css);
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="" alt="img"></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div id="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-btn" onclick="menutoggle()">
+            <div class="menu-btn__burger"></div>
+          </div>
+    </div>
+   
+    <div class="blog_panal">
+        <div class="cell">
+            <div class="blog_row1">
+                <a href="blog1.html">
+                    <div class="blog_img"><img src="" alt=""></div>
+                    <div class="blog_content">
+                        <span>Published: 22nd Dec,2021</span>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum in architecto, hic, quisquam commodi harum veniam reiciendis esse distinctio suscipit accusantium beatae doloremque est fugiat!</p>
+                        <div class="profile_icon">
+                            <img src="" alt="">
+                            <span>Doctor`s Name</span>
+                        </div>
+
+                </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="cell">
+            <div class="blog_row1">
+                <a href="blog1.html">
+                    <div class="blog_img"><img src="medical-5459631.svg" alt=""></div>
+                    <div class="blog_content">
+                    <span>Published: 22nd Dec,2021</span>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum in architecto, hic, quisquam commodi harum veniam reiciendis esse distinctio suscipit accusantium beatae doloremque est fugiat!</p>
+                    <div class="profile_icon">
+                        <img src="" alt="">
+                        <span>Doctor`s Name</span>
+                    </div>
+
+                </a>
+            </div>
+            </div>
+
+        </div>
+        <div class="cell">
+            <div class="blog_row1">
+                <a href="blog1.html">
+                    <div class="blog_img"><img src="medical-5459631.svg" alt=""></div>
+                    <div class="blog_content">
+                    <span>Published: 22nd Dec,2021</span>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum in architecto, hic, quisquam commodi harum veniam reiciendis esse distinctio suscipit accusantium beatae doloremque est fugiat!</p>
+                    <div class="profile_icon">
+                        <img src="" alt="">
+                        <span>Doctor`s Name</span>
+                    </div>
+
+                </a>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="background"></div>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+//toggle
+        var menu =document.getElementsById("menu");
+        menu.style.transform="translateX(500px)";
+        // function menutoggle(){
+        //     if (menu.style.height=="0"){
+        //         menu.style.height="100vh";
+        //     }
+        //     else{
+        //         menu.style.height="0";
+        //     }
+        // }
+    </script>
+</body>
+</html>

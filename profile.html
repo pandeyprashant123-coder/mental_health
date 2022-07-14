@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url(profile.css);
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="" alt="img"></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div id="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="login">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="burger">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+        </div>
+    </div>
+   
+    <section>
+        <div class="profile_panel">
+            <div class="my_profile">
+                <span><img src="profile.svg" alt=""><h2>MyProfile</h2></span>
+                <div class="photo"><img src="medical-5459631.svg" alt=""></div>
+                <p>Full Name</p>
+                <button class="logout">Logout</button>
+            </div>
+            <div class="profile_content">
+                <div class="profile_col">
+                    <div class="firstname"> <p>firstname</p><h6>firstname</h6></div>
+                    <div class="lastname"> <p>lastname</p><h6>lastname</h6></div>
+                    <div class="username"> <p>username</p><h6>username</h6></div>
+                    <div class="email"> <p>email</p><h6>email@gmail.com</h6></div>
+                </div>
+                <div class="profile_col">
+                    <div class="weight"> <p>weight</p><h6>100</h6></div>
+                    <div class="bloodgroup"> <p>Blood Group</p><h6>O+</h6></div>
+                    <div class="height"> <p>height</p><h6>2M</h6></div>
+                    <div class="gender"> <p>Gender</p><h6>Gender</h6></div>
+                    <button class="reportbtn">Send Todays Report</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="background"></div>
+    <script src="https://kit.fontawesome.com/335a9ecabc.js" crossorigin="anonymous"></script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+//toggle
+let menu = document.querySelector('#menu');
+const burger = document.querySelector('.burger');
+menu.style.transform="translateX(500px)";
+burger.addEventListener('click',()=>{
+            if (menu.style.transform=="translateX(500px)"){
+                menu.style.transform = "translateX(0px)";
+            }
+            else if(menu.style.transform = "translateX(0px)"){
+                menu.style.transform="translateX(500px)";
+            }
+        });
+    </script>
+</body>
+</html>

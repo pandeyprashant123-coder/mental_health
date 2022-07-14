@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+:root{
+    --color_dark:#f1e3e3;
+    --color_light:rgba(192,45,80,0.32);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    padding-inline: 1.5rem;
+    padding-top: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    /* height: 100vh; */
+    background-color: rgba(241,227,227,0.4);
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin-right: 120px;
+}
+.login{
+    margin-left: 3.2rem;
+}
+nav ul li{
+    font-weight: 1000;
+    font-size: 1rem;
+}
+nav ul li a{
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.chatpanal{
+    display:flex;
+            flex-direction: column;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;
+            height: 65vh;
+            margin-top:15vh;
+            max-width: 330px;
+            border-radius: 10px;
+            position: relative;
+    text-align: center;
+    padding: 20px 0;
+    
+    background: rgb(207, 204, 204);
+    opacity: 0.6;
+box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    
+}
+.chatpanal h1{
+    font-size: 20px;
+}
+.available{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.availabledoctors{
+    display: flex;
+    margin-bottom: 18px;
+}
+.availabledoctors img{
+    width: 30px;
+}
+.availabledoctors h2{
+    border-radius: 0.7em;
+    display: flex;
+    font-size: 0.8rem;
+    background: white;
+    padding: 8px 75px;
+    z-index: 2;
+}
+.background{
+    border-radius: 50%;
+    bottom: 0;
+    height: 153vh;
+    width: 178vh;
+    position: fixed;
+    background-color: rgba(192, 45, 80, 0.32);
+    transform: translate(-419px,677px);
+    background:radial-gradient(closest-corner at 47% 61%,rgba(192, 45, 80, 3),rgba(90, 84, 205, 0.2));
+}
+
+/* @media only screen and (max-width:900px){
+    .chatbox{
+        width: 40vw;
+    }
+}
+@media only screen and (max-width:700px){
+    .chatbox{
+        width: 50vw;
+    }
+}
+@media only screen and (max-width:600px){
+    .chatbox{
+        width: 70vw;
+    }
+} */
