@@ -31,9 +31,7 @@ body{
 #menu{
     transform: translateX(100px);
 }
-.navbar{
-    margin-left: auto;
-}
+
 nav{
     display: flex;
     justify-content: flex-end;
