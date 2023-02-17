@@ -1,0 +1,34 @@
+
+.mainhead{
+    display: flex;
+}
+.logo a img{
+    position: absolute;
+    width: 6rem;
+    top: 0;
+}
+.navbar{
+    margin-left: auto;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin-right: 120px;
+}
+.login{
+    margin-left: 3.2rem;
+}
+nav ul li{
+    font-weight: 1000;
+    font-size: 1rem;
+}
+nav ul li a{
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}

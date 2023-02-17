@@ -1,46 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-:root{
-    --color_dark:#f1e3e3;
-    --color_light:rgba(192,45,80,0.32);
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-body{
-    padding-inline: 1.5rem;
-    padding-top: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    /* height: 100vh; */
-    background-color: rgba(241,227,227,0.4);
-}
-nav{
-    display: flex;
-    justify-content: flex-end;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    margin-right: 120px;
-}
-.login{
-    margin-left: 3.2rem;
-}
-nav ul li{
-    font-weight: 1000;
-    font-size: 1rem;
-}
-nav ul li a{
-    padding: 10px;
-    margin: 0 20px;
-    cursor: pointer;
-}
+
 .chatpanal{
     display: flex;
     flex-direction: column;
@@ -90,7 +48,7 @@ nav ul li a{
     
 }
 .chatbox{
-    overflow: auto;
+    overflow: scroll;
     width: 100%;
     height: 100%;
     background: white;
@@ -106,7 +64,6 @@ justify-content: flex-end;
     max-width: 50%;
     display: flex;
     margin: 5px;
-    padding:10px;
 }
 .messages p{
     background: rgb(54, 119, 240);
@@ -114,8 +71,9 @@ justify-content: flex-end;
     border-radius: 10px;
     color: white;
     font-size: 13px;
+    margin: 0;
 }
-.messagesSender{
+.messageSender{
     align-self: end;
 }
 .background{
@@ -128,19 +86,3 @@ justify-content: flex-end;
     transform: translate(-419px,677px);
     background:radial-gradient(closest-corner at 47% 61%,rgba(192, 45, 80, 3),rgba(90, 84, 205, 0.2));
 }
-
-/* @media only screen and (max-width:900px){
-    .chatbox{
-        width: 40vw;
-    }
-}
-@media only screen and (max-width:700px){
-    .chatbox{
-        width: 50vw;
-    }
-}
-@media only screen and (max-width:600px){
-    .chatbox{
-        width: 70vw;
-    }
-} */
