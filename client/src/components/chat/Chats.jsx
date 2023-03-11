@@ -7,11 +7,13 @@ import axios from "../../api"
 
 const Chats = () => {
   const [messages, setmessages] = useState([]);
+  const [inputMessage,setInputMessage] = useState('');
   useEffect(()=>{
     axios.get("messages/sync").then((response)=>{
       setmessages(response.data)
     })
   },[])
+  
   useEffect(() => {
     const pusher = new Pusher("1bfa9688581b43fd6376", {
       cluster: "ap2",
@@ -27,14 +29,24 @@ const Chats = () => {
       channel.unsubscribe()
     }
   }, [messages]);
-  console.log(messages)
+  // console.log(messages)
+  const sendMessage=async(e)=>{
+    e.preventDefault();
+    await axios.post('/messages/new',{
+      name:'prashnta',
+      message:inputMessage,
+      received:false,
+    })
+    setInputMessage('');
+  }
+
   return (
     <div>
       <div className="chatpanal">
         <div className="chatbox">
           {
             messages.map((message)=>(
-              <div className={`messages ${message.received &&'messageSender'}`}>
+              <div className={`messages ${!message.received &&'messageSender'}`}>
                 {/* <h1>{message.name}</h1> */}
                 <img src={profile} alt="" />
                 <p>{message.message}</p>
@@ -48,8 +60,8 @@ const Chats = () => {
         </div>
 
         <form action="" className="sendchat">
-          <input name="message" type="text" placeholder="Enter chat...." />
-          <img src={messageSender} alt="" />
+          <input value={inputMessage} onChange={e=>setInputMessage(e.target.value)} type="text" placeholder="Enter chat...." />
+          <button className="btn" type="submit" onClick={sendMessage}><img src={messageSender} alt="" /></button>
         </form>
       </div>
     </div>

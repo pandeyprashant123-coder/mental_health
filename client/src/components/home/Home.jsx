@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './Home.css'
 import medical from "./medical-5459631.svg"
@@ -20,13 +21,13 @@ const Home = () => {
         </div>
     </section>
     <section className="buttons">
-        <a href="psychatrists.html" className="container1">
+        <Link to='/chat' className="container1">
             <div className="container">
                 <div className="content_top"><h4>Take Appointment</h4></div>
                 <div className="content_head"><img src={Appointment} alt=""/></div>
                 <div className="content_about"><span>Fix your appointment now</span> </div>
             </div>
-        </a>
+        </Link>
         <a href="blog.html" className="container2">
             <div className="container">
                 <div className="content_top"><h4>Blog</h4></div>

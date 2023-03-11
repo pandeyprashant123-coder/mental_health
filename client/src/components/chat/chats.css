@@ -48,14 +48,13 @@
     
 }
 .chatbox{
-    overflow: scroll;
+    overflow: auto;
     width: 100%;
     height: 100%;
     background: white;
 box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
 display: flex;
 flex-direction: column;
-justify-content: flex-end;
 }
 .chatbox div img{
     max-width: 20px;
@@ -74,7 +73,11 @@ justify-content: flex-end;
     margin: 0;
 }
 .messageSender{
+
     align-self: end;
+}
+.messageSender img{
+    display: none;
 }
 .background{
     border-radius: 50%;
@@ -85,4 +88,12 @@ justify-content: flex-end;
     background-color: rgba(192, 45, 80, 0.32);
     transform: translate(-419px,677px);
     background:radial-gradient(closest-corner at 47% 61%,rgba(192, 45, 80, 3),rgba(90, 84, 205, 0.2));
+}
+
+.btn{
+    border:none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: antiquewhite;
 }
